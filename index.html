@@ -1,0 +1,220 @@
+Aqui vai conter vários looks para o dia a dia.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Look - Sua Loja de Estilo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            color: #ccc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .categoria-titulo {
+            border-bottom: 2px solid #111;
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        .vitrine {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .produto-card {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .produto-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Ajuste para que fotos e vídeos preencham o espaço corretamente */
+        .produto-midia {
+            width: 100%;
+            height: 350px;
+            object-fit: cover; /* Garante que a imagem/vídeo cubra a área sem distorcer */
+            display: block;
+        }
+
+        .produto-info {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .detalhes {
+            flex: 1;
+            padding-right: 1rem;
+        }
+
+        .detalhes h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .detalhes p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .preco {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #e44d26;
+            white-space: nowrap;
+        }
+
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FASHION LOOK</h1>
+        <p>Encontre o seu estilo em todos os momentos</p>
+    </header>
+
+    <div class="container">
+
+        <h2 class="categoria-titulo">Casual & Dia a Dia</h2>
+        <div class="vitrine">
+            <div class="produto-card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="Camiseta Off-White" class="produto-midia">
+                <div class="produto-info">
+                    <div class="detalhes">
+                        <h3>Camiseta Off-White</h3>
+                        <p>100% Algodão, corte Slim</p>
+                    </div>
+                    <div class="preco">R$ 79,90</div>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <video src="https://videos.pexels.com/video-files/5382352/5382352-sd_540_960_25fps.mp4" class="produto-midia" autoplay loop muted playsinline></video>
+                <div class="produto-info">
+                    <div class="detalhes">
+                        <h3>Calça Jeans Light Wash</h3>
+                        <p>Modelagem reta clássica</p>
+                    </div>
+                    <div class="preco">R$ 149,90</div>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500" alt="Vestido Midi Florido" class="produto-midia">
+                <div class="produto-info">
+                    <div class="detalhes">
+                        <h3>Vestido Midi Florido</h3>
+                        <p>Tecido leve de viscose</p>
+                    </div>
+                    <div class="preco">R$ 189,90</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="categoria-titulo">Inverno & Outono</h2>
+        <div class="vitrine">
+            <div class="produto-card">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500" alt="Casaco Sobretudo Lã" class="produto-midia">
+                <div class="produto-info">
+                    <div class="detalhes">
+                        <h3>Casaco Sobretudo Lã</h3>
+                        <p>Forrado, ideal para dias frios</p>
+                    </div>
+                    <div class="preco">R$ 349,90</div>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <video src="https://videos.pexels.com/video-files/6311438/6311438-sd_540_960_25fps.mp4" class="produto-midia" autoplay loop muted playsinline></video>
+                <div class="produto-info">
+                    <div class="detalhes">
+                        <h3>Moletom Canguru Preto</h3>
+                        <p>Com capuz e bolso frontal</p>
+                    </div>
+                    <div class="preco">R$ 129,90</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="categoria-titulo">Looks Inspirados (Conjuntos)</h2>
+        <div class="vitrine">
+            <div class="produto-card">
+                <video src="https://videos.pexels.com/video-files/4946399/4946399-sd_540_960_30fps.mp4" class="produto-midia" autoplay loop muted playsinline></video>
+                <div class="produto-info">
+                    <div class="detalhes">
+                        <h3>Look Streetwear Completo</h3>
+                        <p>Moletom + Calça Cargo + Boné</p>
+                    </div>
+                    <div class="preco">R$ 299,00</div>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500" alt="Look Executivo Moderno" class="produto-midia">
+                <div class="produto-info">
+                    <div class="detalhes">
+                        <h3>Look Executivo Moderno</h3>
+                        <p>Blazer + Calça de Alfaiataria</p>
+                    </div>
+                    <div class="preco">R$ 419,00</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Fashion Look - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
